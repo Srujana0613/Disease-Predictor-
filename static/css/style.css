@@ -1,0 +1,170 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+/* Default background - diabetes */
+body.diabetes-bg {
+  background-image: url('/static/images/diabetes.png');
+}
+
+/* Heart background */
+body.heart-bg {
+  background-image: url('/static/images/heart.png');
+}
+
+/* Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  padding: 14px 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Disease selector buttons */
+.btn-disease {
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  font-weight: 600;
+  background: white;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.btn-disease:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.active-disease {
+  background: #e74c3c !important;
+  color: white !important;
+}
+
+/* Card */
+.card {
+  border: none;
+  border-radius: 16px;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  color: white;
+  border-radius: 16px 16px 0 0 !important;
+  padding: 14px 20px;
+}
+
+/* Predict button */
+.btn-predict {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s;
+  margin-top: 8px;
+}
+
+.btn-predict:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* Form inputs */
+.form-control {
+  border-radius: 8px;
+  border: 1.5px solid #dee2e6;
+  padding: 10px 14px;
+}
+
+.form-control:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.15);
+}
+
+/* Result card */
+.result-card {
+  border-left: 5px solid #e74c3c !important;
+}
+
+.result-box {
+  background: #fff5f5;
+  border-radius: 10px;
+  padding: 16px 10px;
+  margin: 4px;
+}
+
+.result-label {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.result-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Tips box */
+.tips-box {
+  background: #fff5f5;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 12px;
+}
+
+.tips-box h6 {
+  color: #c0392b;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tips-box ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.tips-box ul li {
+  color: #555;
+  font-size: 0.92rem;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #dee2e6;
+  position: relative;
+  z-index: 1;
+}
