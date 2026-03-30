@@ -5,7 +5,9 @@
 ---
 
 ## 🚀 Live Demo
-Run locally at `http://127.0.0.1:5000`
+**Live:** https://disease-predictor-98p1.onrender.com
+
+**Local:** Run at `http://127.0.0.1:5000` (see Setup & Run below)
 
 ---
 
