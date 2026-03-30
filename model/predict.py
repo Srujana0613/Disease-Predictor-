@@ -1,11 +1,13 @@
+import os
 import pickle
 import numpy as np
 
-# Load both models
-with open('model/diabetes_model.pkl', 'rb') as f:
+# Load both models with absolute model folder path
+model_dir = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(model_dir, 'diabetes_model.pkl'), 'rb') as f:
     diabetes_model = pickle.load(f)
 
-with open('model/heart_model.pkl', 'rb') as f:
+with open(os.path.join(model_dir, 'heart_model.pkl'), 'rb') as f:
     heart_model = pickle.load(f)
 
 def predict_diabetes(pregnancies, glucose, bp, skin, insulin, bmi, dpf, age):
